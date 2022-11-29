@@ -1,0 +1,35 @@
+body {
+    color: #fff;
+    background: #a3d3e6;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    color: #fff;
+    background: #a3d3e6;
+    padding: 12px;
+    display: flex;
+    align-self: center;
+}
+
+select, input, button {
+    font-size: 15px;
+    padding: 4px;
+    margin: 5px;
+}
+
+option {
+    font-size: 25px;
+    display: flex;
+    padding: 4px;
+    margin: 5px;
+}
+
+.output {
+    align-self: center;
+    padding: 15px;
+    font-size: large;
+    font-family: monospace;
+}
