@@ -99,7 +99,5 @@ const FormComponent = class {
         });
     }
 }
-document.addEventListener("DOMContentLoaded", function (event) {
-    const fc = new FormComponent();
-    fc.start();
-});
+const fc = new FormComponent();
+fc.start();
