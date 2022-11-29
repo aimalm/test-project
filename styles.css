@@ -10,7 +10,6 @@ form {
     color: #fff;
     background: #a3d3e6;
     padding: 12px;
-    display: flex;
     align-self: center;
 }
 
@@ -21,7 +20,7 @@ select, input, button {
 }
 
 option {
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     padding: 4px;
     margin: 5px;
@@ -32,4 +31,5 @@ option {
     padding: 15px;
     font-size: large;
     font-family: monospace;
+    align-content: right;
 }
