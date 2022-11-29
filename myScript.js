@@ -39,9 +39,20 @@ const FormComponent = class {
     }
     start() {
 
+        this.buttonWraper();
         this.createOptionElements();
         this.fillSuccessRateAccordingly();
         this.submit();
+    }
+
+    /* Methods------------------------ */
+
+    // Method to wrap button element into a dev
+    buttonWraper() {
+        var btn = submitBtn;
+        var wrapper = document.createElement('div');
+        btn.parentNode.insertBefore(wrapper, btn);
+        wrapper.appendChild(btn);
     }
 
     // Method to create opptions for the select element using the data from the oppoStatus object above
@@ -59,7 +70,7 @@ const FormComponent = class {
             selectTag.appendChild(newOption);
         }
     }
-
+    // This method assigns the relate success rate to the input box value and store the required data to the session storage
     fillSuccessRateAccordingly() {
 
         selectTag.addEventListener('click', function (event) {
@@ -75,6 +86,7 @@ const FormComponent = class {
         });
     };
 
+    // This method retores and uses the requied data from local storage and place it in the dev and then clears the session storage
     submit() {
 
         submitBtn.addEventListener('click', function (event) {
@@ -91,5 +103,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const fc = new FormComponent();
     fc.start();
 });
-
-
